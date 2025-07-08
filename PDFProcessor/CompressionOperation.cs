@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO.Compression;
-using System.Linq;
+﻿using System.IO.Compression;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace PDFProcessor
 {
@@ -48,6 +44,9 @@ namespace PDFProcessor
             Console.WriteLine($"Folder successfully compressed to: {outputFilePath}");
         }
 
+        #region Old code, Not for encrypted drives 
+
+        // This method works for notmal scenario, but it is failing on encrypted drive
         //internal void CompressFolder(string inputFolderPath, string outputFilePath)
         //{
         //    try
@@ -72,5 +71,7 @@ namespace PDFProcessor
         //        Console.WriteLine($"Error while compressing folder: {ex.Message}");
         //    }
         //}
+
+        #endregion
     }
 }

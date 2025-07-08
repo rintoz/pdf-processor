@@ -1,7 +1,6 @@
 ﻿using PdfSharpCore.Drawing;
 using PdfSharpCore.Pdf;
 using PdfSharpCore.Pdf.IO;
-using System.Diagnostics;
 
 namespace PDFProcessor
 {
